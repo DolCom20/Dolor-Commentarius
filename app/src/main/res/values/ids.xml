@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Frau" type="id" />
+    <item name="Avatar" type="id" />
+    <item name="Herr" type="id" />
+    <item name="Name" type="id" />
+    <item name="Geburtsdatum" type="id" />
+    <item name="Vorname" type="id" />
+    <item name="PasswortEingebenWiederholen" type="id" />
+</resources>
