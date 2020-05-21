@@ -6,121 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/zweiterBenutzer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:contentDescription="@android:string/ok"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <TextView
-        android:id="@+id/Karl"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="229dp"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/registrieren"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zweiterBenutzer"
-        tools:text="Karl" />
-
-    <ImageView
-        android:id="@+id/vierterBenutzer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:contentDescription="@android:string/ok"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/ersterBenutzer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="136dp"
-        android:contentDescription="@android:string/ok"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/Heinz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dritterBenutzer"
-        tools:text="Heinz" />
-
-    <TextView
-        android:id="@+id/Susi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vierterBenutzer"
-        tools:text="Susi" />
-
-    <TextView
-        android:id="@+id/Wolfgang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ersterBenutzer"
-        tools:text="Wolfgang" />
-
-    <ImageView
-        android:id="@+id/dritterBenutzer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="356dp"
-        android:contentDescription="@android:string/ok"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
+        tools:text="Name" />
 
     <Button
         android:id="@+id/registrieren"
         style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="40dp"
+        android:onClick="registrieren"
+        android:text="Registrieren"
         android:textColor="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar"
         tools:text="Registrieren" />
 
     <TextView
         android:id="@+id/Willkommen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="142dp"
+        android:text="Willkommen"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#FF9800"
+        app:layout_constraintBottom_toTopOf="@id/registrieren"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
         tools:text="Willkommen" />
+
+    <ImageButton
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="einloggen"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Willkommen"
+        app:srcCompat="@drawable/avatarmann" />
 
 
 </android.support.constraint.ConstraintLayout>

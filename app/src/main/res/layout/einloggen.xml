@@ -6,32 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Einloggen">
 
-    <TextView
-        android:id="@+id/willkomen"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="50dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="@android:color/holo_orange_dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Willkommen" />
-
     <Button
         android:id="@+id/weiter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="60dp"
         android:background="#C7D0D6"
         android:onClick="login"
+        android:text="weiter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/zurück"
+        app:layout_constraintTop_toBottomOf="@id/ausgewählterBenutzer"
+        app:layout_constraintVertical_bias="0.875"
         tools:text="weiter" />
 
     <Button
@@ -39,35 +30,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="75dp"
         android:layout_marginBottom="60dp"
         android:background="#C7D0D6"
         android:onClick="back"
+        android:text="zurück"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weiter"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswortEingeben"
+        app:layout_constraintVertical_bias="0.255"
         tools:text="zurück" />
 
     <ImageView
         android:id="@+id/ausgewählterBenutzer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_width="138dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="15dp"
         android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/Benutzername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/avatarmann" />
 
     <TextView
         android:id="@+id/Benutzername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="84dp"
         android:focusable="auto"
         android:fontFamily="sans-serif-black"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/PasswortEingeben"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ausgewählterBenutzer"
         tools:text="Name" />
@@ -77,9 +77,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="15dp"
+        android:text="Passwort"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/PasswortEingeben"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Benutzername"
         tools:text="Passwort" />
@@ -90,12 +94,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="166dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/weiter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Passwort" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/weiter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswortEingeben" />
 
 </android.support.constraint.ConstraintLayout>
