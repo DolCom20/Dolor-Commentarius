@@ -22,6 +22,7 @@ public class Registrieren2 extends AppCompatActivity {
         //String benutzer = "Hallo " + user;
         //TextView name = findViewById(R.id. benutzername);
         //name.setText(benutzer);
+        //
     }
 
     public void registrieren(View view) {
