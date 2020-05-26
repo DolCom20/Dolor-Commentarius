@@ -7,67 +7,24 @@
     tools:context=".Registrieren">
 
 
-        <TextView
-            android:id="@+id/PasswortEingebenWiederholen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="11dp"
-            android:layout_marginEnd="170dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toTopOf="@+id/zurück"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PasswortWiederholen"
-            tools:text="Passwort eingeben und wiederholen" />
+    <TextView
+        android:id="@+id/FelderAusfüllen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="casual"
+        android:text="*Felder müssen ausgefüllt werden!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zurück"
+        tools:text="* Felder müssen ausgefüllt werden!" />
 
-        <TextView
-            android:id="@+id/FelderAusfüllen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="casual"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.404"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/zurück"
-            tools:text="* Felder müssen ausgefüllt werden!" />
-
-        <EditText
-            android:id="@+id/PasswortEingeben"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="11dp"
-            android:layout_marginEnd="187dp"
-            android:layout_marginBottom="15dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/PasswortWiederholen"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sternpw" />
-
-        <EditText
-            android:id="@+id/PasswortWiederholen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="8dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/PasswortEingebenWiederholen"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.005"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PasswortEingeben" />
-
-        <ImageView
+    <ImageView
             android:id="@+id/Avatar"
             android:layout_width="156dp"
             android:layout_height="130dp"
@@ -83,85 +40,91 @@
             app:srcCompat="@drawable/avatarmann"
             tools:srcCompat="@drawable/avatarmann" />
 
-        <EditText
-            android:id="@+id/Name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Name *"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/Geburtsdatum"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Vorname" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="395dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Email Adresse *"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Geburtsdatum" />
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Name *"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Geburtsdatum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vorname" />
 
 
     <EditText
-            android:id="@+id/Geburtsdatum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="178dp"
-            android:layout_marginBottom="14dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Geburtsdatum*"
-            android:inputType="date"
-            app:layout_constraintBottom_toTopOf="@+id/email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Name" />
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Email Adresse *"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Geburtsdatum" />
 
-        <EditText
-            android:id="@+id/Vorname"
-            android:layout_width="213dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Vorname *"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/Name"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Herr" />
+    <EditText
+        android:id="@+id/Geburtsdatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="64dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Geburtsdatum*"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
 
-        <CheckBox
-            android:id="@+id/Frau"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="15dp"
-            android:onClick="onCheckboxClicked"
-            android:text="Frau"
-            app:layout_constraintBottom_toTopOf="@+id/Vorname"
-            app:layout_constraintEnd_toStartOf="@+id/Herr"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+    <EditText
+        android:id="@+id/Vorname"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Vorname *"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toStartOf="@+id/Avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Herr" />
 
-        <CheckBox
+    <CheckBox
+        android:id="@+id/Frau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Frau"
+        app:layout_constraintBottom_toTopOf="@+id/Vorname"
+        app:layout_constraintEnd_toStartOf="@+id/Herr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <CheckBox
             android:id="@+id/Herr"
             android:layout_width="wrap_content"
             android:layout_height="32dp"
@@ -176,65 +139,53 @@
             app:layout_constraintStart_toEndOf="@+id/Frau"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/registrieren"
-            android:layout_width="129dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="267dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="70dp"
-            android:onClick="registrieren"
-            android:text="registrieren"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/zurück"
-            app:layout_constraintTop_toBottomOf="@+id/email"
-            app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/registrieren"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="registrieren"
+        android:text="Weiter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.257" />
 
-        <Button
-            android:id="@+id/zurück"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="31dp"
-            android:layout_marginEnd="72dp"
-            android:layout_marginBottom="40dp"
-            android:onClick="zurück"
-            android:text="zurück"
-            app:layout_constraintBottom_toTopOf="@+id/FelderAusfüllen"
-            app:layout_constraintEnd_toStartOf="@+id/registrieren"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PasswortWiederholen"
-            app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/zurück"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="zurück"
+        android:text="zurück"
+        app:layout_constraintBottom_toTopOf="@+id/FelderAusfüllen"
+        app:layout_constraintEnd_toStartOf="@+id/registrieren"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
-        <RatingBar
-            android:id="@+id/sternpw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="71dp"
-            android:layout_marginEnd="160dp"
-            app:layout_constraintBottom_toTopOf="@+id/PasswortEingeben"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email" />
-
-        <Button
-            android:id="@+id/bildwechsel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="38dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="114dp"
-            android:onClick="wechselBild"
-            android:text="switch"
-            app:layout_constraintBottom_toTopOf="@+id/email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Name"
-            app:layout_constraintTop_toBottomOf="@+id/Avatar" />
+    <Button
+        android:id="@+id/bildwechsel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="199dp"
+        android:onClick="wechselBild"
+        android:text="switch"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar" />
 
 
 </android.support.constraint.ConstraintLayout>

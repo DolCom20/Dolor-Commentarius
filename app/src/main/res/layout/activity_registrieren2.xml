@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrieren2">
+
+    <TextView
+        android:id="@+id/pweingeben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="107dp"
+        android:text="Passwort eingeben und wiederholen"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Passwort eingeben*"
+        android:inputType="textPassword"
+
+        app:layout_constraintBottom_toTopOf="@+id/pwwiederholen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pweingeben" />
+
+    <EditText
+        android:id="@+id/pwwiederholen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="Passwort wiederholen*"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/zweifaktor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwort" />
+
+    <TextView
+        android:id="@+id/zweifaktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="27dp"
+        android:text="Zwei-Faktor-Authentifizierung"
+        app:layout_constraintBottom_toTopOf="@+id/sternpw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwwiederholen" />
+
+    <RatingBar
+        android:id="@+id/sternpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="107dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zweifaktor" />
+
+    <Button
+        android:id="@+id/registrieren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="registrieren"
+        android:text="registrieren"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sternpw"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/zurück"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="zurück"
+        android:text="zurück"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registrieren"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sternpw"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/benutzername"
+        android:layout_width="148dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="58dp"
+        android:text="Hallo Name!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/pweingeben"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

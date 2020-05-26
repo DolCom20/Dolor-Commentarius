@@ -28,46 +28,23 @@ public class Registrieren extends AppCompatActivity {
 
         public void registrieren(View view) {
 
-            RatingBar stars = (RatingBar) findViewById(R.id.sternpw);
-            float starvalue = stars.getRating();
-
-            Context context = getApplicationContext();
-            CharSequence text = "";
-            int duration = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-
             EditText Vorname = findViewById(R.id.Vorname);
             EditText Name = findViewById(R.id.Name);
             EditText Email = findViewById(R.id.email);
             EditText Geburtsdatum = findViewById(R.id.Geburtsdatum);
 
+            //Diese Variablen müssen in der Datenbank abgespeichert werden
             String vorname = Vorname.getText().toString();
             String name = Name.getText().toString();
             String email = Email.getText().toString();
             String geburtsdatum = Geburtsdatum.getText().toString();
 
-            if (vorname.length() == 0 || name.length() == 0 || email.length() == 0 || geburtsdatum.length() == 0 || starvalue == 0) {
-                context = getApplicationContext();
-                text = "Alle Felder mit * müssen ausgefüllt werden ";
-                duration = Toast.LENGTH_SHORT;
-
-                toast = Toast.makeText(context, text, duration);
-                toast.show();
+            if (vorname.length() == 0 || name.length() == 0 || email.length() == 0 || geburtsdatum.length() == 0) {
+                Toast.makeText(this, "Alle Felder mit * müssen ausgefüllt werden!", Toast.LENGTH_LONG).show();
             } else {
 
-                context = getApplicationContext();
-                text = "Sie wurden erfolgreich registriert! ";
-                duration = Toast.LENGTH_SHORT;
-
-                toast = Toast.makeText(context, text, duration);
-                toast.show();
-
-                Intent i = new Intent(getApplicationContext(), Einloggen.class);
+                Intent i = new Intent(getApplicationContext(), Registrieren2.class);
                 startActivity(i);
-
-
             }
         }
 
@@ -100,8 +77,6 @@ public class Registrieren extends AppCompatActivity {
         }
 
         public void wechselBild(View view) {
-
-
             ImageView imgView = (ImageView) findViewById(R.id.Avatar);
             if (zähler == 3)
             {
