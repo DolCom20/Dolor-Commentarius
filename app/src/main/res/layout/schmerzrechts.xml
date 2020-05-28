@@ -323,8 +323,12 @@
         android:layout_height="36dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="414dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
 
     <Button
         android:id="@+id/hgelenkr"
@@ -332,8 +336,12 @@
         android:layout_height="32dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 
     <Button
         android:id="@+id/uarmmr"
@@ -341,8 +349,12 @@
         android:layout_height="28dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
 
     <Button
         android:id="@+id/elbo"
@@ -350,8 +362,12 @@
         android:layout_height="33dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="346dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
 
     <Button
         android:id="@+id/obarm"
@@ -359,8 +375,12 @@
         android:layout_height="61dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
 
     <Button
         android:id="@+id/schulter"
@@ -368,8 +388,12 @@
         android:layout_height="41dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="264dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
 
     <Button
         android:id="@+id/fuß"
@@ -377,26 +401,38 @@
         android:layout_height="25dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="624dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
 
     <Button
         android:id="@+id/fuknoechel"
         android:layout_width="38dp"
-        android:layout_height="34dp"
+        android:layout_height="18dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="599dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
 
     <Button
         android:id="@+id/untbeiun"
-        android:layout_width="45dp"
-        android:layout_height="49dp"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="557dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
 
     <Button
         android:id="@+id/untbeiob"
@@ -404,8 +440,12 @@
         android:layout_height="37dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="529dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
 
     <Button
         android:id="@+id/knkehle"
@@ -413,8 +453,12 @@
         android:layout_height="33dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="496dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
 
     <Button
         android:id="@+id/kniere"
@@ -422,8 +466,12 @@
         android:layout_height="35dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="494dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
 
     <Button
         android:id="@+id/obschenunau"
@@ -431,8 +479,12 @@
         android:layout_height="36dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="460dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
 
     <Button
         android:id="@+id/obschenkobau"
@@ -440,26 +492,38 @@
         android:layout_height="38dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="430dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
 
     <Button
         android:id="@+id/hueftere"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
 
     <Button
         android:id="@+id/pore"
-        android:layout_width="42dp"
-        android:layout_height="43dp"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="393dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
 
     <Button
         android:id="@+id/untruere"
@@ -467,8 +531,12 @@
         android:layout_height="40dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="353dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
 
     <Button
         android:id="@+id/brustre"
@@ -476,8 +544,12 @@
         android:layout_height="34dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="283dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
 
     <Button
         android:id="@+id/ripre"
@@ -485,8 +557,12 @@
         android:layout_height="44dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="316dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
 
     <Button
         android:id="@+id/untbaure"
@@ -494,8 +570,12 @@
         android:layout_height="21dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
 
     <Button
         android:id="@+id/halsre"
@@ -503,6 +583,10 @@
         android:layout_height="31dp"
         android:text="Button"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
 </android.support.constraint.ConstraintLayout>
