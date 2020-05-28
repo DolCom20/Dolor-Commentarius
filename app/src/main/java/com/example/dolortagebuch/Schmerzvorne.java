@@ -1,0 +1,20 @@
+package com.example.dolortagebuch;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+public class Schmerzvorne extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.schmerzvo);
+    }
+
+    public void test(View view){
+        Toast.makeText(this, "Wurde geklickt!", Toast.LENGTH_LONG).show();
+
+    }
+}
