@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/mensch"
+        android:layout_width="182dp"
+        android:layout_height="467dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rechts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lokalisation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/nul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#BEFA47"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/eins"
+        app:layout_constraintEnd_toStartOf="@+id/funf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vorne" />
+
+    <RadioButton
+        android:id="@+id/vier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="169dp"
+        android:buttonTint="#233A08"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/neun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drei" />
+
+    <RadioButton
+        android:id="@+id/drei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#457013"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/vier"
+        app:layout_constraintEnd_toStartOf="@+id/acht"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zwei" />
+
+    <RadioButton
+        android:id="@+id/eins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#7FD51C"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/zwei"
+        app:layout_constraintEnd_toStartOf="@+id/sechs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nul" />
+
+    <RadioButton
+        android:id="@+id/zwei"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#70AE27"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/drei"
+        app:layout_constraintEnd_toStartOf="@+id/sieben"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eins" />
+
+
+    <RadioButton
+        android:id="@+id/funf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#E6B9B9"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/sechs"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintStart_toEndOf="@+id/nul"
+        app:layout_constraintTop_toBottomOf="@+id/hinten" />
+
+    <RadioButton
+        android:id="@+id/zehn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="123dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:buttonTint="#FF0000"
+        android:text="10"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neun" />
+
+    <RadioButton
+        android:id="@+id/acht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#C55050"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/neun"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintStart_toEndOf="@+id/drei"
+        app:layout_constraintTop_toBottomOf="@+id/sieben" />
+
+    <RadioButton
+        android:id="@+id/neun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#CA4141"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/zehn"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintStart_toEndOf="@+id/vier"
+        app:layout_constraintTop_toBottomOf="@+id/acht" />
+
+    <RadioButton
+        android:id="@+id/sieben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#B86A6A"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/acht"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintStart_toEndOf="@+id/zwei"
+        app:layout_constraintTop_toBottomOf="@+id/sechs" />
+
+    <RadioButton
+        android:id="@+id/sechs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="5dp"
+        android:buttonTint="#C18888"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/sieben"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintStart_toEndOf="@+id/eins"
+        app:layout_constraintTop_toBottomOf="@+id/funf" />
+
+    <TextView
+        android:id="@+id/lokalisation"
+        android:layout_width="330dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:text="Schmerzlokalisierung"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/stark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="50dp"
+        android:text="Schmerzstärke"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/nul"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vorne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/vorne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        android:text="vorne"
+        app:layout_constraintBottom_toTopOf="@+id/mensch"
+        app:layout_constraintEnd_toStartOf="@+id/hinten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lokalisation" />
+
+    <RadioButton
+        android:id="@+id/hinten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        android:text="hinten"
+        app:layout_constraintBottom_toTopOf="@+id/mensch"
+        app:layout_constraintEnd_toStartOf="@+id/links"
+        app:layout_constraintStart_toEndOf="@+id/vorne"
+        app:layout_constraintTop_toBottomOf="@+id/lokalisation" />
+
+    <RadioButton
+        android:id="@+id/links"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        android:text="links"
+        app:layout_constraintBottom_toTopOf="@+id/mensch"
+        app:layout_constraintEnd_toStartOf="@+id/rechts"
+        app:layout_constraintStart_toEndOf="@+id/hinten"
+        app:layout_constraintTop_toBottomOf="@+id/lokalisation" />
+
+    <RadioButton
+        android:id="@+id/rechts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="70dp"
+        android:text="rechts"
+        app:layout_constraintBottom_toTopOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/links"
+        app:layout_constraintTop_toBottomOf="@+id/lokalisation" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="73dp"
+        android:text="zurück"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/keineE"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="76dp"
+        android:text="1 = keine Einschränkungen"
+        android:textColor="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zehn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/keinA"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
+        android:text="10 = kein normaler Alltag mehr möglich "
+        android:textColor="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keineE"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/handr"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <Button
+        android:id="@+id/hgelenkr"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <Button
+        android:id="@+id/uarmmr"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/elbo"
+        android:layout_width="26dp"
+        android:layout_height="33dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <Button
+        android:id="@+id/obarm"
+        android:layout_width="42dp"
+        android:layout_height="61dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <Button
+        android:id="@+id/schulter"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <Button
+        android:id="@+id/fuß"
+        android:layout_width="89dp"
+        android:layout_height="25dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <Button
+        android:id="@+id/fuknoechel"
+        android:layout_width="38dp"
+        android:layout_height="18dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <Button
+        android:id="@+id/untbeiun"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
+
+    <Button
+        android:id="@+id/untbeiob"
+        android:layout_width="62dp"
+        android:layout_height="37dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <Button
+        android:id="@+id/knkehle"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <Button
+        android:id="@+id/kniere"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <Button
+        android:id="@+id/obschenunau"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <Button
+        android:id="@+id/obschenkobau"
+        android:layout_width="72dp"
+        android:layout_height="38dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <Button
+        android:id="@+id/hueftere"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <Button
+        android:id="@+id/pore"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/untruere"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <Button
+        android:id="@+id/brustre"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <Button
+        android:id="@+id/ripre"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/untbaure"
+        android:layout_width="34dp"
+        android:layout_height="21dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/halsre"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+</android.support.constraint.ConstraintLayout>
