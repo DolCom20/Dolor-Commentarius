@@ -17,6 +17,7 @@
         android:background="@drawable/links"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lokalisation"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -316,4 +317,193 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/keineE"
         app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/handli"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <Button
+        android:id="@+id/hgelenkr"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <Button
+        android:id="@+id/uarmmli"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <Button
+        android:id="@+id/elbo"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <Button
+        android:id="@+id/obarmli"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <Button
+        android:id="@+id/schulter"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <Button
+        android:id="@+id/fuß"
+        android:layout_width="89dp"
+        android:layout_height="25dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <Button
+        android:id="@+id/fuknoechel"
+        android:layout_width="39dp"
+        android:layout_height="22dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <Button
+        android:id="@+id/untbeiun"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <Button
+        android:id="@+id/untbeiob"
+        android:layout_width="62dp"
+        android:layout_height="37dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <Button
+        android:id="@+id/knkehle"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <Button
+        android:id="@+id/knieli"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="496dp" />
+
+    <Button
+        android:id="@+id/obschenunau"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <Button
+        android:id="@+id/obschenkobau"
+        android:layout_width="72dp"
+        android:layout_height="38dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <Button
+        android:id="@+id/huefteli"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <Button
+        android:id="@+id/poli"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <Button
+        android:id="@+id/untrueli"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/brustli"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <Button
+        android:id="@+id/ripli"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/untbauli"
+        android:layout_width="28dp"
+        android:layout_height="34dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/halsli"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="233dp" />
 </android.support.constraint.ConstraintLayout>
