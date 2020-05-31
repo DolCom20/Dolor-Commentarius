@@ -8,6 +8,6 @@ public class Schmerzrechts extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.schmerzre);
+        setContentView(R.layout.schmerzrechts);
     }
 }

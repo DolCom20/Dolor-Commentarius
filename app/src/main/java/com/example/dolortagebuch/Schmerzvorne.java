@@ -10,7 +10,7 @@ public class Schmerzvorne extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.schmerzvo);
+        setContentView(R.layout.schmerzvorne);
     }
 
     public void test(View view){
